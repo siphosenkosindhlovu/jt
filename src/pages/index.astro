@@ -1,123 +1,258 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout
+  title="Welcome to Jacaranda Technology Civil Contracting | JT Civil Contracting"
+>
+  <main>
+    <div class="position-relative overflow-hidden hero h-screen">
+      <div class="p-lg-5 mx-auto my-5 col-md-9">
+        <h1 class="display-2 fw-normal text-light">
+          Welcome to <span class="text-secondary">Civil Contracting</span> at <span
+            class="text-secondary">Jacaranda Technology</span
+          >
+        </h1>
+        <h3 class="fw-normal text-light mb-3">
+          Build Your Dream Home from Anywhere in the World
+        </h3>
+        <p class="fw-normal mb-3 text-light">
+          Reliable, Transparent, and Hassle-Free Construction Services for
+          Overseas Clients
+        </p>
+        <div class="d-flex gap-3 justify-content-start lead fw-normal">
+          <a class="btn btn-outline-secondary" href="#featured-3">
+            Learn more
+          </a>
+          <a class="btn btn-secondary" href="#contact"> Get Started Today </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 features" id="featured-3">
+      <div class="row g-8 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <i data-lucide="dollar-sign" class="text-secondary"></i>
+          </div>
+          <h3 class="fs-2 text-primary">Affordable Home Construction</h3>
+          <p>
+            Our civil construction company offers affordable solutions to help
+            the diaspora build their dream homes without breaking the bank.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-2 mb-3"
+          >
+            <i data-lucide="git-graph" class="text-primary"></i>
+          </div>
+          <h3 class="fs-2">Transparent progress tracking</h3>
+          <p>
+            We’ve vetted contractors committed to quality and customer
+            satisfaction, ensuring your project is in good hands.
+          </p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <i data-lucide="hard-hat" class="text-secondary"></i>
+          </div>
+          <h3 class="fs-2 text-primary">Reliable Contractor Network</h3>
+          <p>
+            We’ve curated a network of vetted contractors committed to quality
+            and customer satisfaction, ensuring your project is in good hands.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-5">
+        <div class="col gap-2">
+          <h2 class="fw-bold text-body-emphasis">
+            Build your dream home affordably
+          </h2>
+          <p class="text-body-secondary">
+            Discover the easy way to construct your ideal home, no matter where
+            you are.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's work together</a>
+        </div>
+
+        <div class="col">
+          <p>
+            JT Construction is a new and ambitious residential construction
+            company, dedicated to building high-quality homes for the diaspora
+            community. Our comprehensive services cover every stage of the
+            construction process, from design and planning to building and
+            completion.
+          </p>
+          <p>
+            With a fresh perspective and a commitment to excellence, we ensure
+            your investment back home is managed with utmost care and
+            professionalism.
+          </p>
+        </div>
+      </div>
+      <div
+        id="services"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 px-0"
+      >
+        <div class="col">
+          <div class="card shadow-none border-0 h-100">
+            <img
+              class="card-img-top"
+              width="100%"
+              height="225"
+              src="/public/images/team-engineers-reviewing-blueprints-sketch-600nw-2346078961.png"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-primary">
+                <span class="text-secondary">01</span> Project Design
+              </h5>
+              <p class="card-text">
+                In the Project Design phase, we carefully review the drawings,
+                analyze the design details against budgetary and scheduling
+                constraints, and manage drawing reviews.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-none border-0 h-100">
+            <img
+              class="card-img-top"
+              width="100%"
+              height="225"
+              src="/public/images/pexels-life-of-pix-2469.png"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-primary">
+                <span class="text-secondary">02</span> Construction Management
+              </h5>
+              <p class="card-text">
+                During Construction, we are there, on the site, taking care of
+                every material, every installation, every sub-contractor, every
+                iteration of change—managing all the while for quality control,
+                safety, scheduling, and budget.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-none border-0 h-100">
+            <img
+              class="card-img-top"
+              width="100%"
+              height="225"
+              src="/public/images/pexels-jakubzerdzicki-27522902.png"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-primary">
+                <span class="text-secondary">03</span> Project Delivery
+              </h5>
+              <p class="card-text">
+                In the end, we answer only to one authority— the owner who
+                entrusted us with their vision and expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-5 bg-secondary pleading">
+      <div class="container pb-5">
+        <h2 class="text-primary fw-bold">
+          Your Dream Home Could Be Our Next Project
+        </h2>
+        <div class="row">
+          <div class="col-lg-11">
+            <p>
+              Every great project starts with a vision, and we're here to bring
+              yours to life. As a new but passionate and dedicated team, we are
+              excited to embark on this journey with you. While we’re just
+              starting, our expertise in civil engineering and local
+              construction, combined with our commitment to excellence,
+              positions us to deliver outstanding results.
+            </p>
+            <p>
+              We understand the trust you place in choosing a contractor,
+              especially when managing a project from afar. Our goal is to turn
+              your dream into a reality, with the same care and precision as if
+              it were our own. By choosing us, you’re not just hiring a
+              contractor – you’re partnering with a team that is deeply invested
+              in making your vision come true.
+            </p>
+            <p>
+              Be a part of our story as one of our first clients, and let’s
+              create something exceptional together.
+            </p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary"
+          >Be part of our success story</a
+        >
+      </div>
+    </div>
+  </main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+<style lang="scss">
+  .hero {
+    background: linear-gradient(
+        to right,
+        rgba(85, 30, 29, 0.7) 0,
+        rgba(85, 30, 29, 0.7) 100%
+      ),
+      url("/images/Architectural drawing-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 740px;
+  }
+
+  .pleading {
+    background: linear-gradient(
+        to bottom,
+        rgba(228, 210, 190, 1) 0%,
+        rgba(228, 210, 190, 0.7019999694824218) 100%
+      ),
+      url("/images/structural-design-process.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    background-color: white;
+  }
+  .features {
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
+    .feature {
+      &-icon {
+        padding: 2.5rem;
+        border-radius: 99px;
+        color: var(--bs-secondary);
+      }
+      background-color: white;
+      padding: 1rem;
+      .row {
+        gap: 1rem;
+      }
+
+      &:nth-child(even) {
+        background-color: var(--bs-primary);
+        color: var(--bs-light);
+        h3 {
+          color: var(--bs-secondary);
+        }
+      }
+    }
+  }
 </style>

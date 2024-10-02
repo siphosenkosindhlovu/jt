@@ -1,6 +1,8 @@
 ---
+import "../scss/custom.scss";
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,43 +10,156 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <header class="d-flex justify-content-center">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img src="/images/JTCC.png" width="360px" />
+        </a>
+
+        <ul class="nav nav-pills px-3">
+          <li class="d-flex items-end nav-item">
+            <a href="/#services" class="nav-link" aria-current="page"
+              >What We Do</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#" class="nav-link">Our Projects</a>
+          </li> -->
+          <li class="d-flex items-end nav-item bg-primary">
+            <a href="#contact" class="nav-link text-secondary"
+              >Let's work together</a
+            >
+          </li>
+          <!-- <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+        </ul>
+      </header>
+    </div>
+    <slot />
+    <footer class="bg-white">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col col-lg-5 d-flex gap-3 flex-col">
+            <div>
+              <img src="/images/JTCC.png" width="360px" class="mb-1" /> is a division
+              of Jacaranda Tech (Private) Limited
+            </div>
+          </div>
+          <div class="col col-lg-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Services</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >JT Civil Contracting Home</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="contact" class="col col-lg-4">
+            <div class="d-flex flex-col align-items-end gap-3">
+              <h3>Let's work together</h3>
+              <a
+                href="mailto:enquiries@jacarandatechnology.co.zw"
+                class="d-flex gap-1"
+              >
+                <i data-lucide="mail"></i>enquiries@jacarandatechnology.co.zw
+              </a>
+              <a href="tel:+263718513777" class="d-flex gap-1">
+                <i data-lucide="phone"></i>+263 718 513 777
+              </a>
+              <a
+                href="https://wa.me/263718513777"
+                target="_blank"
+                class="d-flex gap-1"
+              >
+                <i data-lucide="message-circle"></i>WhatsApp +263 718 513 777
+              </a>
+              <a href="tel:+263784275177" class="d-flex gap-1">
+                <i data-lucide="phone"></i>+263 784 275 177
+              </a>
+              <a
+                href="https://wa.me/263784275177"
+                target="_blank"
+                class="d-flex gap-1"
+              >
+                <i data-lucide="message-circle"></i>WhatsApp +263 784 275 177
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+      >
+        <div
+          class="col-md-12 d-flex flex-col align-items-center justify-content-center"
+        >
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <img src="/images/JT.png" width="360px" class="d-inline" />
+          </a>
+          <span class="mt-1 ms-1 mb-3 mb-md-0 text-body-secondary"
+            >&copy; 2024 Jacaranda Tech (Private) Limited</span
+          >
+        </div>
+
+        <!-- <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#twitter"></use></svg
+              ></a
+            >
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#instagram"></use></svg
+              ></a
+            >
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><svg class="bi" width="24" height="24"
+                ><use xlink:href="#facebook"></use></svg
+              ></a
+            >
+          </li>
+        </ul> -->
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      import { createIcons, icons } from "lucide";
+      createIcons({ icons });
+    </script>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
